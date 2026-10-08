@@ -2,6 +2,7 @@
 const task = document.getElementById('taskForm')
 const sendBtn = document.getElementById('sendBtn')
 
+
 sendBtn.addEventListener('click', function(event) {
 
     event.preventDefault()
@@ -14,3 +15,6 @@ sendBtn.addEventListener('click', function(event) {
     task.reset()
 
 }) 
+
+
+

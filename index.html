@@ -13,27 +13,31 @@
     <form id="taskForm">
         
         <label for="taskName">Task Name</label><br>
-        <input type="text" id="taskName" name="taskName"><br>
+        <input type="text" id="taskName" name="taskName" required><br>
 
         <label for="taskId">Id</label><br>
-        <input type="text" id="taskId" name="taskId"><br>
+        <input type="number" id="taskId" name="taskId" required><br>
 
         <label for="taskDescription">Description</label><br>
-        <input type="text" id="taskDescription" name="taskDescription"><br>
+        <input type="text" id="taskDescription" name="taskDescription" required><br>
 
         <label for="creationDate">Creation Date</label><br>
-        <input type="datetime-local" id="creationDate" name="creationDate"><br>
+        <input type="datetime-local" id="creationDate" name="creationDate" required><br>
 
         <label for="previewDate">Preview Date</label><br>
-        <input type="datetime-local" name="previewDate" id="previewDate"><br>
+        <input type="datetime-local" name="previewDate" id="previewDate" required><br>
 
         <label for="status">Status</label><br>
-        <input type="text" id="status" name="status"><br>   
+        <select id="status" name="task-status" required>
+            <option value="to-do">To Do</option>
+            <option value="doing">Doing</option>
+            <option value="Finished">Finished</option>
+        </select>
+        <br>
 
         <button id="sendBtn">Create</button>
 
     </form>
-
 
     <script src="script.js"></script>
 </body>
